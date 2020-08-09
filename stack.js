@@ -7,7 +7,7 @@ const stackObj = {
     stackRemove: (arr) => {
         arr.pop(); // it will pop(remove) always the last item of the array
     },
-    stackGetMinValeu: (arr) => {
+    stackGetMinValue: (arr) => {
         return arr.reduce((acc, cur) => {
             return (acc < cur ? acc : cur); // it will return stackArr min value
         });
@@ -21,4 +21,4 @@ for (let i = 0; i < 10 ; i++) { // push 10 random int numbers into the array sta
 }
 
 stackObj.stackRemove(stackArr); // remove the last stack item
-stackObj.stackGetMinValeu(stackArr); // return the min value inside the stack
+stackObj.stackGetMinValue(stackArr); // return the min value inside the stack
