@@ -7,10 +7,14 @@ const stackObj = {
     stackRemove: (arr) => {
         arr.pop(); // it will pop(remove) always the last item of the array
     },
+    stackSort: (arr) => {
+        return arr.sort((a, b) => a-b);
+    },
     stackGetMinValeu: (arr) => {
-        return arr.reduce((acc, cur) => {
-            return (acc < cur ? acc : cur); // it will return stackArr min value
-        });
+        const stackSorted = stackObj.stackSort(arr);
+        console.log(stackSorted)
+        const min = stackSorted[0];
+        return min;
     } 
 }
 
